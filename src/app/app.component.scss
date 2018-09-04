@@ -1,0 +1,172 @@
+// .shrink-toolbar {
+//     height: 10px;
+//   }
+
+$break-xsmall: 350px;
+$break-small: 500px;
+$break-medium: 768px;
+$break-large: 1200px;
+
+.container {
+  @media screen and (max-width: $break-small) {
+    padding: 0px !important;
+  }
+}
+
+.container-fluid {
+  @media screen and (max-width: $break-small) {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100% !important;
+  overflow: hidden;
+  animation: slide-down 0.7s;
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: 40px;
+}
+
+.toolbar-1 {
+  height: 64px;
+  transition: height 0.5s;
+  z-index: 1;
+}
+
+.toolbar-2 {
+  height: 64px;
+  z-index: -1;
+  transition: height 0.5s;
+}
+
+.mat-button {
+  font-size: 1.3em;
+  transition: font-size 0.5s;
+  @media screen and (max-width: $break-medium) {
+    min-width: 70px;
+  }
+  @media screen and (max-width: $break-small) {
+    font-size: 1em;
+    padding: 0 4px;
+    min-width: 50px;
+  }
+  @media screen and (max-width: $break-xsmall) {
+    font-size: 1em;
+    padding: 0px 10px 0px 10px;
+    min-width: 36px;
+  }
+}
+
+.material-icons {
+  font-size: 24px;
+  transition: font-size 0.5s;
+}
+
+.span-label {
+  font-size: 0.7em;
+  padding: 4px 0px 0px 18px;
+  transition: font-size 0.5s;
+}
+
+// #buttonList{
+//   @media screen and (max-width: $break-small) {
+//     display:none;
+//   }
+// }
+
+@media screen and (min-width: $break-medium) {
+  #spanMobile {
+    display: none;
+  }
+
+  .shrink {
+    .mat-button {
+      font-size: 1em;
+    }
+
+    .toolbar-1 {
+      height: 39px !important;
+    }
+
+    .toolbar-2 {
+      height: 0px;
+    }
+
+    .span-label {
+      font-size: 0em;
+      padding: 0px 0px 0px 18px;
+    }
+  }
+}
+@media screen and (max-width: $break-small) {
+  .shrink {
+    .mat-button {
+      font-size: 1em;
+    }
+
+    .toolbar-1 {
+      height: 39px !important;
+    }
+
+    .toolbar-2 {
+      height: 0px;
+    }
+
+    .span-label {
+      font-size: 0em;
+      padding: 0px 0px 0px 18px;
+    }
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slowly {
+  from {
+    width: 64px;
+  }
+  to {
+    width: 32px;
+  }
+}
+
+.footer {
+  background-color: #3e4247;
+  height: 75px;
+  line-height: 75px;
+  font-size: 0.8em;
+  color: #9e9e9e;
+  @media screen and (min-height: 900px) {
+    height: 150px;
+    line-height: 150px;
+    font-size: 0.9em;
+  }
+  @media screen and (max-width: $break-xsmall) {
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.6em;
+  }
+  a {
+    color: #9e9e9e;
+  }
+  a:hover {
+    color: #f44336;
+    text-decoration: none;
+  }
+}
