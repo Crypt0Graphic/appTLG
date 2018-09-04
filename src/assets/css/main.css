@@ -2508,10 +2508,17 @@ ul.icons li .icon:before {
 
 /* Wrapper */
 .wrapper {
+  padding: 4rem 0 2rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper2 {
   padding: 8rem 0 6rem 0;
   position: relative;
   z-index: 1;
 }
+
 @media screen and (max-width: 1280px) {
   .wrapper {
     padding: 4rem 0 2rem 0;
