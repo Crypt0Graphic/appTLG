@@ -1,5 +1,4 @@
 @import url(font-awesome.min.css);
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600');
 /*
 	Industrious by TEMPLATED
 	templated.co @templatedco
@@ -9,6 +8,11 @@
 @-ms-viewport {
   width: device-width;
 }
+
+* {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
 body {
   -ms-overflow-style: scrollbar;
 }
@@ -226,10 +230,10 @@ body,
 input,
 select,
 textarea {
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.65;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 1.65 !important;
 }
 
 a {
@@ -286,6 +290,12 @@ h5 a,
 h6 a {
   color: inherit;
   text-decoration: none;
+}
+
+.banner h1 {
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 3rem;
+  line-height: 1.2;
 }
 
 h1 {
@@ -2536,7 +2546,7 @@ ul.icons li .icon:before {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url('../../assets/images/banner.jpg');
+  background-image: url('../../assets/images/Banner01.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2788,7 +2798,7 @@ ul.icons li .icon:before {
   z-index: 1;
 }
 #banner:after {
-  background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+  background: linear-gradient(135deg, #ff3300 0%, #111111 74%);
   content: ' ';
   display: block;
   height: 100%;
@@ -2796,7 +2806,7 @@ ul.icons li .icon:before {
   opacity: 0.6;
   position: absolute;
   top: 0;
-  webkit-linear-gradientidth: 100%;
+  /* webkit-linear-gradientidth: 100%; */
   width: 100%;
   z-index: 1;
 }
@@ -2855,7 +2865,7 @@ body.is-preload #banner:before {
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
   background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)),
-    url(../../assets/images/cta01.jpg);
+    url(../../assets/images/Banner02.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3339,8 +3349,9 @@ body:before {
 }
 #header > .logo {
   color: #ffffff;
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
   height: inherit;
   line-height: inherit;
   padding: 0 1.25rem;
@@ -3426,7 +3437,7 @@ body:before {
   -ms-justify-content: center;
   justify-content: center;
   background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)),
-    url('../../images/banner.jpg');
+    url('../../images/Banner01.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
