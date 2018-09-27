@@ -106,7 +106,7 @@
       <section>
         <div class="content">
           <div class="image">
-            <img src="assets/images/Foto1.jpg" alt="" class="img-thumbnail" />
+            <img src="assets/images/Foto1.jpg" alt="" class="img-thumbnail" (click)="openModal(content, 1)" />
           </div>
         </div>
       </section>
@@ -163,5 +163,18 @@
     </div>
   </div>
 </footer>
+
+<!-- Modal -->
+<ng-template #content let-modal>
+  <!-- <div class="modal-header">
+    <h4 class="modal-title">Modal title</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+  <div class="modal-body">
+    <img src="assets/images/Foto1.jpg" alt="" class="img-fluid" />
+  </div>
+</ng-template>
 
 <router-outlet></router-outlet>
