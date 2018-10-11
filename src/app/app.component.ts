@@ -24,9 +24,11 @@ export class AppComponent {
   constructor(private modalService: NgbModal) {}
 
   title = 'Tolga Dijital';
+  photoSource: any;
 
   openModal(content, photoNumber) {
     console.log(photoNumber);
+    this.photoSource = 'assets/images/Foto' + photoNumber + '.jpg';
     this.modalService.open(content, { centered: true, size: 'lg' });
   }
 }
