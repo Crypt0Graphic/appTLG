@@ -396,7 +396,7 @@ textarea {
 }
 
 a {
-  color: #ce1b28 !important;
+  color: #ce1b28;
 }
 
 strong,
@@ -3371,7 +3371,7 @@ body:before {
   text-decoration: none;
 }
 #header > nav > a:hover {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 #header > nav > a[href='#menu'] {
   text-decoration: none;
@@ -3855,4 +3855,16 @@ body.is-menu-visible #menu {
   transform: translateX(0);
   box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
   visibility: visible;
+}
+
+.nav-link-color a{
+  color: white;
+}
+
+.nav-link-color a:hover{
+  color: #ce1b28 !important;
+}
+
+.services-link-color a{
+  color: #ce1b28 !important;
 }
