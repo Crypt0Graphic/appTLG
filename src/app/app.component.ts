@@ -25,6 +25,11 @@ export class AppComponent {
 
   title = 'Tolga Dijital';
   photoSource: any;
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
 
   openModal(content, photoNumber) {
     console.log(photoNumber);

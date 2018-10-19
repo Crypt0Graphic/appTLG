@@ -3331,18 +3331,6 @@ body:before {
 }
 
 #header {
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
   background: #111111;
   color: rgba(255, 255, 255, 0.5);
   cursor: default;
@@ -3867,4 +3855,27 @@ body.is-menu-visible #menu {
 
 .services-link-color a{
   color: #ce1b28 !important;
+}
+
+.navbar{
+  padding: 0rem 1rem !important;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover, button:hover, .button:hover {
+  box-shadow: inset 0 0 0 1px transparent !important;
+  color: transparent !important;
+  border: none !important;
+}
+
+input[type='submit'], input[type='reset'], input[type='button'], button, .button {
+  background-color: transparent !important;
+  box-shadow: inset 0 0 0 1px transparent !important;
+  color: transparent !important;
+  border: none !important;
 }
